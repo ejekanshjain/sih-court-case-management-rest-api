@@ -23,6 +23,9 @@ app.use('/api/login', loginRouter)
 const lawyerRouter = require('./routes/lawyer')
 app.use('/api/lawyer', lawyerRouter)
 
+const clientRouter= require('./routes/client')
+app.use('/api/client', clientRouter)
+
 const port = process.env.PORT || 3000
 
 app.listen(port, () => {

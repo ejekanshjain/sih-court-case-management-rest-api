@@ -36,6 +36,15 @@ Content-Type: application/json
 }
 
 
-###
+### Get client
+GET http://localhost:5000/api/client 
 
+### Add a client 
 
+POST http://localhost:5000/api/client
+Content-Type: application/json
+
+{
+    "email": "sajid.mansoori12@gmail.com",
+    "password": "password"
+}
